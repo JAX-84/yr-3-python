@@ -1,0 +1,30 @@
+#Input Explained
+#phthon has many speach marks "built in" functions
+#here is a list:
+#https://docs.python.org/3/library/functions.html
+
+#here is a varibale
+name = "Bob"
+
+#however, not everyone is called bob
+#here is how to allow a user to input...
+#...their name
+name = str(input("Enter your name:"))
+print("nice to meet you",name)
+
+age = int(input("Enter your age:"))
+print("wow! I can't believe you are",age,"years old!")
+
+colour = str(input("Enter your favourite colour:"))
+print("your favourite colour is",colour,"!")
+
+live = str(input("Enter where you live:"))
+print("hummm, I haven't heard of",live,"before!")
+
+height = float(input("how tall are you in metres and centimeters?:"))
+print("wow you are",height,"metres tall!")
+            
+
+
+
+
