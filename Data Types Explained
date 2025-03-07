@@ -1,0 +1,9 @@
+#data types
+#C.R.I.B.S
+#here are variables that hold...
+#...each type of data type
+character = "J" #must have speech marks
+real = 24.48 #has a decimal point
+integer = 884 #whole number
+boolean = True #CAPITAL T
+string = "abcdefgh1234!£$%^&*()_+="#must have speech marks
