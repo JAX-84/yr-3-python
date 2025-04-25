@@ -1,0 +1,5 @@
+number = int(inout("Enter an interger between (and including) 5 and 10>>>"))
+if number >=5 and number <=10:
+  print("thank you")
+else:
+  print("too small")
