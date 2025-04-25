@@ -1,0 +1,17 @@
+#Selection challenge 08 (GCSECS.com)
+#Most games have 1-player, 2-player and online options
+#Write some code displays a menu e.g.:
+#"Press 1 for 1-player, 2 for 2-player" etc
+#if 1 is entered "Thank you for choosing 1-player"...
+#...is displayed (repeast for 2 and 3)
+#if anythin other than 1, 2 or 3 is entered...
+#..display "invalid choice"
+game_option = int(input("enter your game option, 1 for 1-player game, 2 for 2-player game, or 3 for online game"))
+if game_option == 1:
+  print("thank you for choosing 1-player game")
+elif game_option == 2:
+  print("thank you for choosing 2-player game")
+elif game_option == 3:
+  print("thank you for choosing online game")
+else:
+  print("invalid choice")
