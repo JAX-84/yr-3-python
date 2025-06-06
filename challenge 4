@@ -1,0 +1,52 @@
+Challenge 4: Cheeky calculation 
+Nana runs an annual gaming league for the online card game, "You Dunn Know". Players from the United Kingdom, the United States, and Australia play You Dunn Know. They pay an entry fee to take part. Nana arranges the fixtures between players and informs them of the times and dates that they need to play.
+
+Create a program that  calculates an entry fee for a each player. This calculation should take into account the skill level of the player.
+​
+The system should display the fee in the appropriate currency, using these exchange rates:
+£ sterling for all UK players; no exchange rate required
+£1 = 1.50 US dollars
+£1 = 2.00 AU dollars.
+The entry fee will consist of:
+£10 per player
+an additional fee of £35 for ‘Expert’ players or £20 for ‘Casual’ players.
+ 
+Here is what to do:
+The fee calculator should start with a welcome message.
+It should ask the user for the player’s: email address
+skill level (E for expert, C for casual)
+country (UK, US, AU).
+It should then calculate the entry fee.
+The fee should be displayed in the correct currency, using the following abbreviations: USD, AUD, GBP.
+It should then ask if the user wishes to calculate another fee.
+
+​You will need to have knowledge of the following ideas
+Variables
+print function
+Input function
+Selection​
+Subprograms
+If you are unsure of these concepts, please see links the to the left
+
+# Goodluck! (delete this line and CODE!)
+calc = True
+while calc == True:
+  price = 10
+  print("welcome to the currancey calc!")
+  email = str(input("please enter your emailadress>>>"))
+  skill = str(input("please enter your skill level, e for expert or C for casual"))
+  nation = str(input("please enter the nation you are in (UK, US, AU)>>"))
+  if skill == "E":
+    price = price + 35
+  else:
+    price = price + 20
+  if nation == "US":
+    print("the fee is " + str(price * 1.5) + "USD")
+  elif nation == "AU":
+    print("the fee is " + str(price * 2) + "AUD")
+  else:
+    print("the fee is " + str(price) + "GBP")
+  another = str(input("would you like to make another calculation? (yes or no)"))
+  if another == "no":
+    print("thank you!")
+    calc = False
