@@ -1,0 +1,34 @@
+Challenge 2: Register for a new game
+
+Create a program that allows a new player in a game to ‘register’ for that game.
+To register for the game, players must enter their age, gender, an email address and a player name.
+Follow the tasks below to complete this:
+Display on the screen a welcome message to the new player for the game.
+Ask the player to enter their age, gender and email address and a player name. (These values should be stored in appropriately named variables)
+Display this information on the screen and ask the player to confirm whether or not it is correct.
+IF the information is incorrect, ask the player to re-enter the information.
+Display the CORRECT information on the screen to complete the registration.
+Add comments to your program to explain how it works.
+
+​You will need to have knowledge of the following ideas
+Variables
+print function
+Input function
+Selection​
+If you are unsure of these concepts, please see links the to the left
+
+# Hint, use variables, input and selection
+# Goodluck!
+
+while True:
+  print("welcome to the best game on earth!")
+  age = str(input("please enter your age>>>"))
+  gender = str(input("please enter your gender>>>"))
+  email = str(input("please enter your email adress>>>"))
+  name = str(input("please enter your name>>>"))
+  correct = str(input("are you " + age + " years old? and you are a " + gender + ". and you have the email adress of " + email + "? please answer yes or no"))
+  if correct == "yes":
+    print(age + "\n" + gender + "\n" + email + "\n" + name)
+    break
+  else:
+    print("error, restarting programme")
