@@ -1,0 +1,36 @@
+Challenge 3: Registering a new player
+Nana runs an annual gaming league for the online card game, "You Dunn Know". Players from the United Kingdom, the United States, and Australia play You Dunn Know. They pay an entry fee to take part. Nana arranges the fixtures between players and informs them of the times and dates that they need to play.
+Players need to enter their personal details in order to enter a card league.
+
+Here is what you need to code
+Display a title stating: League registration.
+Ask the player to enter: first name, last name, nickname, and email address.
+Ask the player to enter a skill level, using E for ‘Expert’ or C for ‘Casual’.
+Display the player’s personal details on the screen.
+If the player entered E then ‘Expert’ should be displayed; if they entered C then ‘Casual’ should be displayed.
+Ask the player to confirm that all of the personal details are correct.
+If any detail is incorrect, ask the player to re-enter all of the personal details and display them again.
+Return to the title message.Calculating an entry fee
+
+​You will need to have knowledge of the following ideas
+Variables
+print function
+Input function
+Selection​
+If you are unsure of these concepts, please see links the to the left
+
+# Easy peasey...get you can do it!
+login = True
+while login == True:
+  print("League registration")
+  firstname = str(input("enter your first name"))
+  lastname = str(input("enter your last name"))
+  nickname = str(input("enter your nickname"))
+  email = str(input("enter your email adress"))
+  skill = str(input("enter what level you would like, E for expert, or C for casual"))
+  correct = str(input("are these correct:" + "\n" + firstname + "\n" + lastname + "\n" +  nickname + "\n" +  email + "\n" + skill))
+  if correct == "yes":
+    print("please pay £40 to play")
+    login = False
+  else:
+    print("please re-enter details")
