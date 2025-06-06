@@ -19,8 +19,8 @@ If you are unsure of these concepts, please see links the to the left
 
 # Hint, use variables, input and selection
 # Goodluck!
-
-while True:
+login = True
+while login == True:
   print("welcome to the best game on earth!")
   age = str(input("please enter your age>>>"))
   gender = str(input("please enter your gender>>>"))
@@ -29,6 +29,6 @@ while True:
   correct = str(input("are you " + age + " years old? and you are a " + gender + ". and you have the email adress of " + email + "? please answer yes or no"))
   if correct == "yes":
     print(age + "\n" + gender + "\n" + email + "\n" + name)
-    break
+    login = False
   else:
     print("error, restarting programme")
